@@ -1,0 +1,552 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>無料肌相談カウンセリング｜WA CLINIC 銀座（デザイン案）</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="../assets/lp/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* 案⑦ 無料肌相談カウンセリング：気軽に話しかけられる相談室。白に近いセージ地、丸ゴシック、吹き出し。差し色はセージグリーンとやわらかなピーチ */
+:root{--bg:#F6F7F2;--paper:#FFFFFF;--ink:#2A2E28;--ink2:#5B6158;--muted:#8C9289;--line:#E1E5DC;--sage:#5E7F64;--sage-dk:#4C6A52;--sage-soft:#E6EEE5;--peach:#F7E2D3;--peach-ink:#8A5A3E;
+--round:"Zen Maru Gothic","Hiragino Maru Gothic ProN",sans-serif;--sans:"Zen Kaku Gothic New","Hiragino Sans",sans-serif;--wrap:1080px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 18px}
+.sp{display:inline}
+
+/* 仮表示 */
+.draft{background:#FFF8DC;color:#7A6200;font-size:11px;text-align:center;padding:5px 12px;line-height:1.5}
+.tbd{display:inline-block;font-family:var(--sans);font-size:10px;font-weight:700;line-height:1.5;color:#7A6200;background:#FFF3C4;border:1px dashed #D2AE3C;border-radius:4px;padding:0 5px;margin-left:4px;vertical-align:2px;white-space:nowrap}
+
+/* ヘッダー */
+.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+.site-header img{width:112px}
+.site-header nav{display:none}
+.hbtn{font-family:var(--round);font-size:12px;font-weight:700;color:#fff;background:var(--sage);text-decoration:none;border-radius:999px;padding:7px 14px}
+
+/* 共通 */
+section{padding:52px 0}
+.eyebrow{display:block;font-family:var(--round);font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--sage);margin-bottom:6px}
+h2{font-family:var(--round);font-weight:900;font-size:23px;line-height:1.45;margin:0 0 8px;letter-spacing:.02em}
+.sub{font-size:13.5px;color:var(--ink2);margin:0 0 20px}
+.cta{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--sage);color:#fff;text-decoration:none;font-family:var(--round);font-weight:700;font-size:16px;padding:16px 22px;border-radius:999px;box-shadow:0 6px 16px rgba(94,127,100,.28);transition:background .2s}
+.cta:hover{background:var(--sage-dk)}
+.cta2{display:block;text-align:center;margin-top:8px;font-family:var(--round);font-weight:700;font-size:14px;color:var(--sage);text-decoration:none;padding:12px;border:1.5px solid var(--sage);border-radius:999px;background:var(--paper)}
+.cta-note{font-size:11.5px;color:var(--muted);text-align:center;margin:10px 0 0;line-height:1.6}
+.cta-note a{color:var(--sage);font-weight:700}
+.note{font-size:11px;color:var(--muted);line-height:1.75;margin:16px 0 0}
+
+/* FV */
+.hero{padding:24px 0 34px}
+.pill{display:inline-block;font-family:var(--round);font-size:12px;font-weight:700;color:var(--sage);background:var(--sage-soft);border-radius:999px;padding:4px 13px;margin-bottom:12px}
+.pill b{font-size:15px;margin-right:2px}
+h1{font-family:var(--round);font-weight:900;font-size:31px;line-height:1.38;margin:0 0 10px;letter-spacing:.02em}
+h1 span{color:var(--sage)}
+.lead{font-size:14px;color:var(--ink2);margin:0 0 18px}
+.doc{display:grid;grid-template-columns:140px 1fr;gap:12px;align-items:end;margin-bottom:16px}
+.doc img{width:140px;height:186px;object-fit:cover;object-position:50% 12%;border-radius:20px 20px 20px 4px}
+.bubble{position:relative;background:var(--paper);border-radius:18px;padding:12px;font-family:var(--round);font-weight:700;font-size:14px;line-height:1.6;box-shadow:0 4px 14px rgba(40,50,40,.07);margin:0 0 24px}
+.bubble::before{content:"";position:absolute;left:-8px;bottom:14px;border:8px solid transparent;border-right-color:var(--paper);border-left:0}
+.bubble small{display:block;font-family:var(--sans);font-weight:500;font-size:10.5px;color:var(--muted);margin-top:4px}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:16px}
+.feats div{background:var(--paper);border-radius:14px;padding:10px 4px;text-align:center}
+.feats i{display:grid;place-items:center;width:30px;height:30px;margin:0 auto 4px;border-radius:50%;background:var(--sage-soft);color:var(--sage);font-style:normal;font-size:14px;font-weight:700;font-family:var(--round)}
+.feats b{display:block;font-family:var(--round);font-size:12.5px;line-height:1.4}
+.feats small{display:block;font-size:10px;color:var(--muted);line-height:1.4}
+
+/* 相談例 */
+.qs{display:flex;flex-wrap:wrap;gap:8px}
+.qs span{font-family:var(--round);font-weight:700;font-size:13px;background:var(--paper);border-radius:16px 16px 16px 4px;padding:9px 13px;box-shadow:0 2px 8px rgba(40,50,40,.05)}
+.qs span:nth-child(3n+2){background:var(--peach);color:var(--peach-ink);border-radius:16px 16px 4px 16px}
+.qs-foot{font-family:var(--round);font-weight:700;font-size:15px;margin:22px 0 0;text-align:center}
+.qs-foot span{color:var(--sage)}
+
+/* できること */
+.cans{display:grid;gap:14px}
+.can{background:var(--paper);border-radius:20px;overflow:hidden}
+.can > img,.can > .visual{width:100%;aspect-ratio:16/10;object-fit:cover}
+.can .visual{display:grid;place-items:center;background:var(--sage-soft)}
+.can .visual svg{width:46%;height:auto}
+.can div.txt{padding:16px 18px 20px}
+.can .n{font-family:var(--round);font-size:12px;font-weight:700;color:var(--sage)}
+.can h3{font-family:var(--round);font-size:18px;line-height:1.5;margin:2px 0 6px}
+.can p{font-size:13.5px;color:var(--ink2);margin:0}
+.can small{display:block;font-size:10.5px;color:var(--muted);margin-top:6px}
+
+/* VISIA */
+.visia{background:var(--sage-soft)}
+.vgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.vgrid div{background:var(--paper);border-radius:14px;padding:12px 12px 12px 44px;position:relative}
+.vgrid div::before{content:"";position:absolute;left:12px;top:15px;width:22px;height:22px;border-radius:50%;background:var(--dot,var(--sage));opacity:.85}
+.vgrid b{display:block;font-family:var(--round);font-size:15px;line-height:1.4}
+.vgrid small{display:block;font-size:11.5px;color:var(--ink2);line-height:1.55}
+
+/* 流れ */
+.steps{display:grid;gap:8px;counter-reset:s}
+.step{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:center;background:var(--paper);border-radius:16px;padding:10px}
+.step img{width:72px;height:72px;object-fit:cover;border-radius:12px}
+.step .n{font-family:var(--round);font-size:11px;font-weight:700;color:var(--sage)}
+.step b{display:block;font-family:var(--round);font-size:15.5px;line-height:1.4}
+.step small{display:block;font-size:12.5px;color:var(--ink2);line-height:1.65}
+.ease{margin-top:16px;text-align:center;background:var(--peach);border-radius:18px;padding:18px 16px}
+.ease b{display:block;font-family:var(--round);font-size:16px;color:var(--peach-ink);margin-bottom:4px}
+.ease p{font-size:12.5px;color:var(--ink2);margin:0}
+
+/* メニュー */
+.menu{background:var(--paper)}
+.block-h{font-family:var(--round);font-size:16px;font-weight:900;margin:28px 0 10px;display:flex;align-items:center;gap:8px}
+.block-h::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--sage)}
+.trials{display:grid;gap:10px}
+.trial{display:grid;grid-template-columns:84px 1fr;gap:12px;align-items:center;border:1.5px solid var(--sage);background:var(--sage-soft);border-radius:16px;padding:10px 14px 10px 10px;text-decoration:none}
+.trial img{width:84px;height:64px;object-fit:cover;border-radius:10px;background:#fff}
+.trial .tag{display:inline-block;font-size:10.5px;font-weight:700;color:#fff;background:var(--sage);border-radius:999px;padding:1px 8px}
+.trial b{display:block;font-family:var(--round);font-size:15.5px;line-height:1.45;margin-top:2px}
+.trial small{display:block;font-size:12px;color:var(--ink2)}
+.trial em{font-style:normal;font-size:12px;font-weight:700;color:var(--sage)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips a{font-size:12.5px;font-weight:500;border:1px solid var(--line);border-radius:999px;padding:5px 11px;background:var(--bg);text-decoration:none;transition:border-color .2s,color .2s}
+.chips a:hover{border-color:var(--sage);color:var(--sage)}
+.chips a.hot{border-color:var(--sage);color:var(--sage);font-weight:700;background:var(--sage-soft)}
+.tags a{background:var(--paper);border-color:var(--sage-soft);color:var(--sage-dk)}
+.tags a::before{content:"# ";opacity:.6}
+.cats{display:grid;gap:0}
+.cat{border-top:1px solid var(--line);padding:16px 0}
+.cat h3{font-family:var(--round);font-size:15.5px;margin:0 0 8px}
+.cat h4{font-size:11.5px;font-weight:700;color:var(--muted);margin:10px 0 6px}
+.cat details summary{cursor:pointer;font-family:var(--round);font-size:15.5px;font-weight:700;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.cat details summary::-webkit-details-marker{display:none}
+.cat details summary::after{content:"＋";color:var(--sage)}
+.cat details[open] summary::after{content:"－"}
+.cat details summary small{font-family:var(--sans);font-weight:500;font-size:11.5px;color:var(--muted);margin-left:8px;margin-right:auto}
+.cat details .chips{margin-top:10px}
+.allmenu{display:inline-block;margin-top:14px;font-size:13px;font-weight:700;color:var(--sage)}
+
+/* 料金・条件 */
+.price-card{background:var(--paper);border-radius:24px;padding:24px 20px;box-shadow:0 6px 24px rgba(40,50,40,.06);border:1.5px solid var(--sage-soft)}
+.price-head{text-align:center;border-bottom:1px dashed var(--line);padding-bottom:16px;margin-bottom:16px}
+.price-head span{font-family:var(--round);font-weight:700;font-size:14px;color:var(--sage)}
+.price-head strong{display:block;font-family:var(--round);font-weight:900;font-size:56px;line-height:1.1;color:var(--ink);letter-spacing:.02em}
+.price-head strong small{font-size:22px;margin-left:2px}
+.price-head em{font-style:normal;font-size:11.5px;color:var(--muted)}
+.incl{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:6px}
+.incl li{font-family:var(--round);font-weight:700;font-size:14.5px;background:var(--sage-soft);border-radius:10px;padding:8px 12px 8px 36px;position:relative}
+.incl li::before{content:"";position:absolute;left:13px;top:50%;width:12px;height:7px;margin-top:-6px;border-left:2.5px solid var(--sage);border-bottom:2.5px solid var(--sage);transform:rotate(-45deg)}
+.conds{margin:0 0 18px;display:grid;gap:0}
+.conds div{display:grid;grid-template-columns:76px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13px}
+.conds dt{font-weight:700;color:var(--ink2)}
+.conds dd{margin:0}
+
+/* 院長 */
+.doctor-grid{display:grid;gap:18px}
+.doctor-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 18%;border-radius:24px}
+.dr-role{font-size:12px;color:var(--muted);margin:0}
+.dr-name{font-family:var(--round);font-weight:900;font-size:24px;margin:0;line-height:1.4}
+.dr-name small{display:block;font-family:var(--sans);font-weight:500;font-size:11.5px;color:var(--muted);letter-spacing:.06em}
+.quote{font-family:var(--round);font-weight:700;font-size:16px;color:var(--sage);margin:14px 0 8px}
+.doctor p.msg{font-size:14px;color:var(--ink2);margin:0 0 14px}
+.career{display:grid;gap:4px;font-size:12.5px;color:var(--ink2);margin:0 0 10px;padding:14px 16px;background:var(--paper);border-radius:14px}
+.career div{display:grid;grid-template-columns:52px 1fr;gap:8px}
+.career dt{font-weight:700;color:var(--sage)}
+.career dd{margin:0}
+.textlink{font-size:13px;font-weight:700;color:var(--sage)}
+
+/* 院内 */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.gallery figure{margin:0}
+.gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:16px}
+.gallery figcaption{font-size:11.5px;color:var(--ink2);margin-top:4px}
+
+/* FAQ */
+.faq details{background:var(--paper);border-radius:14px;margin-bottom:8px;padding:0 16px}
+.faq summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:24px 1fr 18px;gap:8px;align-items:start;padding:14px 0;font-family:var(--round);font-weight:700;font-size:14.5px;line-height:1.55}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";color:var(--sage);font-size:16px;line-height:1.4}
+.faq summary::after{content:"＋";color:var(--sage)}
+.faq details[open] summary::after{content:"－"}
+.faq details p{margin:0;padding:0 0 16px 32px;font-size:13.5px;color:var(--ink2)}
+
+/* アクセス */
+.access dl{margin:0;background:var(--paper);border-radius:18px;padding:6px 18px}
+.access dl div{display:grid;grid-template-columns:76px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.access dl div:last-child{border-bottom:0}
+.access dt{font-weight:700;color:var(--ink2)}
+.access dd{margin:0}
+.access .map{display:inline-block;margin-top:12px}
+.access img{border-radius:18px;width:100%;aspect-ratio:16/9;object-fit:cover;margin-bottom:14px}
+
+/* 最後のCTA */
+.closing{background:var(--sage);color:#fff;text-align:center}
+.closing h2{color:#fff}
+.closing .sub{color:rgba(255,255,255,.85)}
+.closing .cta{background:#fff;color:var(--sage-dk);box-shadow:none}
+.closing .cta:hover{background:#EEF3ED}
+.closing .cta2{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.closing .tel{display:block;margin-top:16px;font-size:13px;color:rgba(255,255,255,.9);text-decoration:none}
+.closing .tel b{font-family:var(--round);font-size:20px;letter-spacing:.04em;display:block;color:#fff}
+.closing .btns{max-width:440px;margin:0 auto}
+
+footer{background:var(--paper);padding:28px 0 100px;font-size:11.5px;color:var(--muted);text-align:center}
+footer img{width:110px;margin:0 auto 10px}
+footer nav{display:flex;justify-content:center;gap:16px;margin:8px 0}
+footer nav a{color:var(--ink2)}
+
+/* 固定バー（スマホ・タブレット） */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 92px;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-top:1px solid var(--line)}
+.sticky a{display:flex;justify-content:center;align-items:center;border-radius:999px;font-family:var(--round);font-weight:700;font-size:14.5px;text-decoration:none;padding:12px 8px}
+.sticky a:first-child{background:var(--sage);color:#fff}
+.sticky a:last-child{border:1.5px solid var(--sage);color:var(--sage);font-size:13px}
+.js-sticky .sticky{transform:translateY(110%);transition:transform .3s}
+.js-sticky .sticky.is-shown{transform:none}
+@media (prefers-reduced-motion:reduce){.js-sticky .sticky{transition:none}}
+
+/* タブレット */
+@media (min-width:600px){
+  .wrap{padding:0 32px}
+  .hero{padding:40px 0 48px}
+  h1{font-size:40px}
+  .doc{grid-template-columns:200px 1fr}
+  .doc img{width:200px;height:250px}
+  .bubble{font-size:17px;padding:18px}
+  .hero .actions{max-width:460px}
+  .cans{grid-template-columns:repeat(3,1fr)}
+  .can .visual{aspect-ratio:16/10}
+  .vgrid{grid-template-columns:repeat(3,1fr)}
+  .trials{grid-template-columns:repeat(3,1fr)}
+  .trial{grid-template-columns:1fr;padding:12px}
+  .trial img{width:100%;height:96px}
+  .gallery{grid-template-columns:repeat(4,1fr)}
+  .price-card{max-width:620px;margin:0 auto;padding:30px 36px}
+  .faq .wrap,.qs-wrap{max-width:820px}
+  .doctor-grid{grid-template-columns:260px 1fr;align-items:start;gap:32px}
+  .doctor-grid img{aspect-ratio:4/5}
+  .access .wrap{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+  .access h2,.access .eyebrow{grid-column:1/-1}
+  .access img{margin:0}
+}
+/* PC */
+@media (min-width:900px){
+  .sp{display:none}
+  section{padding:80px 0}
+  h2{font-size:30px}
+  .sub{font-size:15px;margin-bottom:28px}
+  .site-header .wrap{height:64px}
+  .site-header img{width:128px}
+  .site-header nav{display:flex;gap:22px;margin-left:auto;margin-right:22px}
+  .site-header nav a{font-size:13px;font-weight:500;color:var(--ink2);text-decoration:none}
+  .site-header nav a:hover{color:var(--sage)}
+  .hbtn{font-size:13px;padding:9px 18px}
+  .hero{padding:56px 0 72px}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;grid-template-areas:"text photo" "act photo";column-gap:64px;align-items:center}
+  .h-text{grid-area:text;align-self:end}
+  .h-act{grid-area:act;align-self:start}
+  .hero .photo{grid-area:photo}
+  h1{font-size:50px}
+  .lead{font-size:16px;margin-bottom:26px}
+  .doc{display:block;position:relative;margin:0}
+  .doc img{width:100%;height:auto;aspect-ratio:4/5;border-radius:32px 32px 32px 8px;object-position:50% 20%}
+  .doc .bubble{position:absolute;left:-48px;bottom:36px;max-width:280px;font-size:18px;margin:0}
+  .doc .bubble::before{display:none}
+  .feats{gap:10px;max-width:520px}
+  .feats div{padding:14px 6px}
+  .feats b{font-size:14px}
+  .feats small{font-size:11px}
+  .hero .actions{max-width:520px}
+  .qs{justify-content:center;gap:10px}
+  .qs span{font-size:15px;padding:11px 16px}
+  .head-c{text-align:center}
+  .can h3{font-size:19px}
+  .vgrid{grid-template-columns:repeat(6,1fr)}
+  .vgrid div{padding:52px 12px 16px;text-align:center}
+  .vgrid div::before{left:50%;top:16px;margin-left:-13px;width:26px;height:26px}
+  .steps{grid-template-columns:repeat(5,1fr);gap:12px}
+  .step{grid-template-columns:1fr;padding:12px;align-items:start}
+  .step img{width:100%;height:120px}
+  .ease{max-width:720px;margin:24px auto 0}
+  .menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+  .cat:nth-child(2){border-top:1px solid var(--line)}
+  .trial img{height:120px}
+  .doctor-grid{grid-template-columns:360px 1fr;gap:56px}
+  .dr-name{font-size:30px}
+  .closing h2{font-size:32px}
+  .sticky{display:none}
+  footer{padding-bottom:36px}
+}
+</style></head><body>
+<p class="draft">デザイン案（WA CLINIC 社内確認用）｜<span class="tbd">仮</span> の項目は院と確認中の内容です</p>
+<header class="site-header"><div class="wrap">
+<a href="#top"><img src="../assets/lp/logo-yoko-black.png" alt="WA CLINIC"></a>
+<nav aria-label="ページ内リンク"><a href="#can">相談でできること</a><a href="#flow">相談の流れ</a><a href="#menu">治療メニュー</a><a href="#price">内容と条件</a><a href="#access">アクセス</a></nav>
+<a class="hbtn" href="https://reservation.medical-force.com/c/65f81c55ac4c4336a4c3ce85f7b2817f/reservations/new">無料相談を予約</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+<div class="h-text">
+<span class="pill"><b>無料</b>肌相談カウンセリング</span>
+<h1>肌のこと、<br><span>なんでも</span><br>相談してください。</h1>
+<p class="lead">治療を決めていなくても大丈夫。<br>医師が肌を診て、VISIAで肌の状態を記録しながら、<br class="sp">一緒に考えます。</p>
+</div>
+<div class="photo">
+<div class="doc"><img src="../assets/lp/doctor.jpg" alt="WA CLINIC 院長 武藤 文之介">
+<p class="bubble">気になっていること、<br>まずは聞かせてください。<small>WA CLINIC 院長 武藤 文之介</small></p></div>
+</div>
+<div class="h-act">
+<div class="feats">
+<div><i>診</i><b>医師が診察</b><small>肌を直接見て確認</small></div>
+<div><i>測</i><b>VISIAで分析</b><small>肌の状態を撮影・記録</small></div>
+<div><i>話</i><b>相談だけでもOK</b><small>決めなくて大丈夫</small></div>
+</div>
+<div class="actions js-hero-cta">
+<a class="cta" href="https://reservation.medical-force.com/c/65f81c55ac4c4336a4c3ce85f7b2817f/reservations/new">無料肌相談を予約する<span aria-hidden="true">→</span></a>
+<a class="cta2" href="https://lin.ee/5nxKFoa">LINEで気軽に聞いてみる</a>
+<p class="cta-note">初めての方・おひとり様1回<span class="tbd">仮</span>　<a href="#price">内容と条件を見る</a></p>
+</div>
+</div>
+</div></section>
+
+<section class="consult" style="padding-top:12px"><div class="wrap qs-wrap">
+<div class="head-c">
+<span class="eyebrow">YOUR QUESTIONS</span>
+<h2>こんな相談、よくあります。</h2>
+<p class="sub">まとまっていなくても、ひとことからで大丈夫です。</p>
+</div>
+<div class="qs">
+<span>シミとそばかす、何が違う？</span><span>くすみが気になる</span><span>自分に合う治療がわからない</span>
+<span>ダウンタイムが心配</span><span>何から始めればいい？</span><span>予算の中でできることは？</span>
+<span>毛穴・ハリも相談したい</span><span>他院で受けた治療のことも聞きたい</span><span>今のスキンケアで合っている？</span>
+</div>
+<p class="qs-foot">施術名が分からなくても、<br class="sp"><span>悩みをそのまま</span>お話しください。</p>
+</div></section>
+
+<section id="can"><div class="wrap">
+<div class="head-c">
+<span class="eyebrow">WHAT WE DO</span>
+<h2>肌を診て、記録して、<br>これからを一緒に考えます。</h2>
+<p class="sub">無料肌相談でできることは、この3つです。</p>
+</div>
+<div class="cans">
+<article class="can"><img src="../assets/photo/doctor-treat.jpg" alt="医師が肌を診察する様子" style="object-position:50% 30%"><div class="txt">
+<span class="n">01</span><h3>医師が、肌を直接診ます</h3>
+<p>気になる部分だけでなく、肌全体の状態も確認します。これまでの治療やスキンケア、服用中のお薬も伺います。</p></div></article>
+<article class="can"><div class="visual" role="img" aria-label="VISIAでの撮影・解析のイメージ">
+<svg viewBox="0 0 120 140" aria-hidden="true">
+<defs><clipPath id="face"><ellipse cx="60" cy="70" rx="44" ry="58"/></clipPath></defs>
+<ellipse cx="60" cy="70" rx="44" ry="58" fill="#fff" stroke="#5E7F64" stroke-width="1.2"/>
+<g clip-path="url(#face)" stroke="#C9DBC9" stroke-width="1"><line x1="0" y1="30" x2="120" y2="30"/><line x1="0" y1="50" x2="120" y2="50"/><line x1="0" y1="70" x2="120" y2="70"/><line x1="0" y1="90" x2="120" y2="90"/><line x1="0" y1="110" x2="120" y2="110"/></g>
+<line x1="8" y1="62" x2="112" y2="62" stroke="#5E7F64" stroke-width="1.6"/>
+<g fill="#A6795C"><circle cx="38" cy="78" r="2.4"/><circle cx="44" cy="84" r="1.6"/><circle cx="34" cy="86" r="1.8"/><circle cx="80" cy="76" r="2"/><circle cx="86" cy="84" r="1.5"/><circle cx="70" cy="40" r="1.4"/></g>
+<g fill="none" stroke="#D98C7A" stroke-width="1.2" opacity=".8"><ellipse cx="40" cy="92" rx="10" ry="6"/><ellipse cx="82" cy="92" rx="10" ry="6"/></g>
+<path d="M44 58h10M66 58h10M60 66v14M53 100q7 4 14 0" stroke="#5B6158" stroke-width="1" fill="none" stroke-linecap="round"/>
+</svg></div><div class="txt">
+<span class="n">02</span><h3>VISIAで、肌の状態を記録します</h3>
+<p>肌診断機VISIAで撮影し、シミや赤み、毛穴などの状態を画像で確認します。見た目だけでは分かりにくい部分も、医師と一緒に見ていきます。</p>
+<small>※図はイメージです</small></div></article>
+<article class="can"><img src="../assets/photo/consult-sheet.jpg" alt="肌の状態と治療の進め方を整理するシート"><div class="txt">
+<span class="n">03</span><h3>治療の進め方と費用を、ご説明します</h3>
+<p>治療の候補と順番、回数や間隔の目安、費用をお伝えします。ご予算や通院のペース、ダウンタイムのご希望もお聞かせください。</p></div></article>
+</div>
+</div></section>
+
+<section class="visia"><div class="wrap">
+<div class="head-c">
+<span class="eyebrow">SKIN ANALYSIS</span>
+<h2>VISIAで確認できること</h2>
+<p class="sub">撮影した画像から、肌の状態を項目ごとに確認します。</p>
+</div>
+<div class="vgrid">
+<div style="--dot:#A6795C"><b>シミ</b><small>表面に見えているシミ</small></div>
+<div style="--dot:#7C5C8A"><b>隠れシミ</b><small>紫外線による、表に出ていない色素</small></div>
+<div style="--dot:#5B6158"><b>しわ</b><small>目元・口元などのしわ</small></div>
+<div style="--dot:#5E7F64"><b>キメ</b><small>肌表面のなめらかさ</small></div>
+<div style="--dot:#4F7A8C"><b>毛穴</b><small>毛穴の目立ち</small></div>
+<div style="--dot:#D98C7A"><b>赤み</b><small>炎症などによる赤み</small></div>
+</div>
+<p class="note head-c">VISIAは肌の状態を撮影・解析する機器です。治療の判断は、画像も参考にしながら医師が行います。</p>
+</div></section>
+
+<section id="flow"><div class="wrap">
+<div class="head-c">
+<span class="eyebrow">YOUR VISIT</span>
+<h2>ご相談の流れ</h2>
+<p class="sub">肌を診て、データで確かめてから、プランを考えます。</p>
+</div>
+<div class="steps">
+<div class="step"><img src="../assets/photo/reception.jpg" alt="WA CLINICの受付"><div><span class="n">STEP 1</span><b>ご予約</b><small>WEB・LINE・お電話から。受けたい施術が決まっていなくても大丈夫です。</small></div></div>
+<div class="step"><img src="../assets/photo/consult-room.jpg" alt="WA CLINICの診察室"><div><span class="n">STEP 2</span><b>お悩みを伺う</b><small>気になること、これまでの治療、スキンケア、ご予算などをお聞きします。</small></div></div>
+<div class="step"><img src="../assets/photo/powder-room.jpg" alt="WA CLINICのパウダールーム"><div><span class="n">STEP 3</span><b>洗顔・VISIA撮影</b><small>メイクを落として、肌の状態を撮影します。</small></div></div>
+<div class="step"><img src="../assets/photo/doctor-consult.jpg" alt="医師による診察"><div><span class="n">STEP 4</span><b>医師の診察</b><small>画像も参考に、肌の状態と治療の選択肢をご説明します。</small></div></div>
+<div class="step"><img src="../assets/lp/clinic-office.jpg" alt="WA CLINICの相談スペース"><div><span class="n">STEP 5</span><b>プランのご提案</b><small>治療の進め方、回数の目安、費用をご案内します。</small></div></div>
+</div>
+<div class="ease"><b>提案を聞いて、<br class="sp">その場で決めなくても大丈夫です。</b>
+<p>無理な勧誘や、不要な施術のおすすめはいたしません。<br class="sp">ご提案を持ち帰って、ゆっくりご検討ください。</p></div>
+</div></section>
+
+<section class="menu" id="menu"><div class="wrap">
+<div class="head-c">
+<span class="eyebrow">TREATMENT MENU</span>
+<h2>この中から、あなたの肌に<br>合うプランをご提案します。</h2>
+<p class="sub">WA CLINICの治療メニューです（公式サイト掲載）。<br class="sp">施術ではなく、ホームケアや内服から始めるご提案をする場合もあります。</p>
+</div>
+
+<p class="block-h">初回体験を用意している治療</p>
+<div class="trials">
+<a class="trial" href="https://www.waclinic-ginza.com/LP/bbl/"><img src="../assets/lp/bbl-device.png" alt="" style="object-fit:contain"><div><span class="tag">初回体験あり</span><b>BBL光治療（全顔）</b><small>シミ・そばかす・赤み</small><em>詳しく見る →</em></div></a>
+<a class="trial" href="https://www.waclinic-ginza.com/LP/picotoning/"><img src="../assets/lp/pico-light.jpg" alt=""><div><span class="tag">初回体験あり</span><b>ピコトーニング（全顔）</b><small>シミ・くすみ・色ムラ</small><em>詳しく見る →</em></div></a>
+<a class="trial" href="https://www.waclinic-ginza.com/LP/massage-peel/"><img src="../assets/lp/peel-product.png" alt="" style="object-fit:contain"><div><span class="tag">初回体験あり</span><b>マッサージピール（全顔）</b><small>ハリ・ツヤ・キメ</small><em>詳しく見る →</em></div></a>
+</div>
+
+<p class="block-h">お悩みから見る</p>
+<div class="chips tags">
+<a href="https://www.waclinic-ginza.com/menu/tag/stain">シミ</a><a href="https://www.waclinic-ginza.com/menu/tag/%e3%81%9d%e3%81%b0%e3%81%8b%e3%81%99">そばかす</a><a href="https://www.waclinic-ginza.com/menu/tag/%e8%89%b2%e7%b4%a0%e6%b2%88%e7%9d%80">色素沈着</a><a href="https://www.waclinic-ginza.com/menu/tag/%e3%81%8f%e3%81%99%e3%81%bf">くすみ</a><a href="https://www.waclinic-ginza.com/menu/tag/%e7%be%8e%e7%99%bd">美白</a><a href="https://www.waclinic-ginza.com/menu/tag/%e6%af%9b%e7%a9%b4">毛穴</a><a href="https://www.waclinic-ginza.com/menu/tag/siwa">シワ</a><a href="https://www.waclinic-ginza.com/menu/tag/%e3%83%8f%e3%83%aa">ハリ</a><a href="https://www.waclinic-ginza.com/menu/tag/%e3%83%84%e3%83%a4">ツヤ</a><a href="https://www.waclinic-ginza.com/menu/tag/%e3%81%9f%e3%82%8b%e3%81%bf">たるみ</a><a href="https://www.waclinic-ginza.com/menu/tag/%e3%82%b6%e3%83%a9%e3%81%a4%e3%81%8d">ザラつき</a><a href="https://www.waclinic-ginza.com/menu/tag/%e3%83%8b%e3%82%ad%e3%83%93%e8%b7%a1">ニキビ跡</a><a href="https://www.waclinic-ginza.com/menu/tag/%e4%b9%be%e7%87%a5">乾燥</a><a href="https://www.waclinic-ginza.com/menu/tag/%e7%be%8e%e8%82%8c">美肌</a><a href="https://www.waclinic-ginza.com/menu/tag/eijinngukea">エイジングケア</a>
+</div>
+
+<p class="block-h">すべての治療メニュー</p>
+<div class="menu-cols">
+<div class="cat"><h3>美容皮膚科</h3>
+<h4>美容施術</h4>
+<div class="chips"><a href="https://www.waclinic-ginza.com/menu/wa-essence-program">WA ESSENCE PROGRAM</a><a href="https://www.waclinic-ginza.com/menu/hifu%ef%bc%88ultracelzi%ef%bc%89">HIFU（ULTRAcel[zi:]）</a><a href="https://www.waclinic-ginza.com/menu/%e3%82%a4%e3%82%aa%e3%83%b3%e5%b0%8e%e5%85%a5-%e3%82%a8%e3%83%ac%e3%82%af%e3%83%88%e3%83%ad%e3%83%9d%e3%83%ac%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3">エレクトロポレーション</a><a href="https://www.waclinic-ginza.com/menu/co2%e3%83%ac%e3%83%bc%e3%82%b6%e3%83%bc">CO2レーザー</a><a class="hot" href="https://www.waclinic-ginza.com/menu/bbl">BBL</a><a href="https://www.waclinic-ginza.com/menu/%e3%83%92%e3%83%bc%e3%83%a9%e3%82%a4%e3%83%88">ヒーライト</a><a href="https://www.waclinic-ginza.com/menu/%e3%83%94%e3%83%bc%e3%83%aa%e3%83%b3%e3%82%b0">ピーリング</a><a href="https://www.waclinic-ginza.com/menu/%e6%b0%b4%e5%85%89%e6%b3%a8%e5%b0%84%ef%bc%88hycoox%ef%bc%89-2">水光注射（HYCOOX）</a><a class="hot" href="https://www.waclinic-ginza.com/menu/%e3%83%94%e3%82%b3%e3%83%ac%e3%83%bc%e3%82%b6%e3%83%bc%ef%bc%88picoway%ef%bc%89-2">ピコレーザー（PicoWay）</a><a href="https://www.waclinic-ginza.com/menu/potenza">ポテンツァ（POTENZA）</a><a class="hot" href="https://www.waclinic-ginza.com/menu/%e3%83%9e%e3%83%83%e3%82%b5%e3%83%bc%e3%82%b8%e3%83%94%e3%83%bc%e3%83%ab">マッサージピール</a><a href="https://www.waclinic-ginza.com/menu/%e5%8c%bb%e7%99%82%e8%84%b1%e6%af%9b">医療脱毛</a></div>
+<h4>注射</h4>
+<div class="chips"><a href="https://www.waclinic-ginza.com/menu/%e3%83%92%e3%82%a2%e3%83%ab%e3%83%ad%e3%83%b3%e9%85%b8-%ef%bc%88%e6%b3%a8%e5%85%a5%ef%bc%89-2">ヒアルロン酸</a><a href="https://www.waclinic-ginza.com/menu/%e3%83%9c%e3%83%88%e3%83%83%e3%82%af%e3%82%b9">ボトックス</a></div>
+<h4>点滴・注射</h4>
+<div class="chips"><a href="https://www.waclinic-ginza.com/menu/exosome-stem-cells2">エクソソーム療法</a><a href="https://www.waclinic-ginza.com/menu/%e3%83%97%e3%83%a9%e3%82%bb%e3%83%b3%e3%82%bf%e6%b3%a8%e5%b0%84">プラセンタ注射</a><a href="https://www.waclinic-ginza.com/menu/%e9%ab%98%e6%bf%83%e5%ba%a6%e3%83%93%e3%82%bf%e3%83%9f%e3%83%b3c%e7%82%b9%e6%bb%b4">高濃度ビタミンC点滴</a><a href="https://www.waclinic-ginza.com/menu/%e7%be%8e%e7%99%bd%e7%82%b9%e6%bb%b4">美白点滴</a><a href="https://www.waclinic-ginza.com/menu/%e7%96%b2%e5%8a%b4%e5%9b%9e%e5%be%a9%e7%82%b9%e6%bb%b4">疲労回復点滴</a><a href="https://www.waclinic-ginza.com/menu/%e9%ab%98%e6%bf%83%e5%ba%a6%e3%82%b0%e3%83%ab%e3%82%bf%e3%83%81%e3%82%aa%e3%83%b3%e7%82%b9%e6%bb%b4">高濃度グルタチオン点滴</a></div>
+</div>
+<div>
+<div class="cat"><h3>再生医療</h3>
+<div class="chips"><a href="https://www.waclinic-ginza.com/menu/vfd%e7%99%82%e6%b3%95">VFD療法</a><a href="https://www.waclinic-ginza.com/menu/prp%ef%bc%88%e5%a4%9a%e8%a1%80%e5%b0%8f%e6%9d%bf%e8%a1%80%e6%bc%bf%ef%bc%89%e7%99%82%e6%b3%95">PRP（多血小板血漿）療法</a><a href="https://www.waclinic-ginza.com/menu/nmn%e3%80%80%ef%bc%88%e7%82%b9%e6%bb%b4%e3%80%81%e5%90%b8%e5%85%a5%ef%bc%89">NMN療法（点滴／吸入）</a><a href="https://www.waclinic-ginza.com/menu/exosome-stem-cells">エクソソーム療法</a><a href="https://www.waclinic-ginza.com/menu/%e7%9c%9f%e7%9a%ae%e7%b7%9a%e7%b6%ad%e8%8a%bd%e7%b4%b0%e8%83%9e%ef%bc%88%e7%a7%bb%e6%a4%8d%ef%bc%89">真皮線維芽細胞療法</a><a href="https://www.waclinic-ginza.com/menu/%e8%84%82%e8%82%aa%e5%b9%b9%e7%b4%b0%e8%83%9e%ef%bc%88%e6%b3%a8%e5%85%a5%ef%bc%89">脂肪幹細胞療法（顔注入）</a><a href="https://www.waclinic-ginza.com/menu/test6">脂肪幹細胞療法（点滴）</a><a href="https://www.waclinic-ginza.com/menu/stemcelltherapy">脂肪幹細胞療法（関節注入）</a></div>
+</div>
+<div class="cat"><h3>ドクターズコスメ</h3>
+<div class="chips"><a href="https://www.waclinic-ginza.com/menu/stem-x-serum%ef%bc%88%e3%82%b9%e3%83%86%e3%83%a0%e3%83%bb%e3%83%86%e3%83%b3%e3%83%bb%e3%82%bb%e3%83%a9%e3%83%a0%ef%bc%89">STEM X SERUM</a><a href="https://www.waclinic-ginza.com/menu/revision-skincare%ef%bc%8d%e3%83%aa%e3%83%93%e3%82%b8%e3%83%a7%e3%83%b3">Revision Skincare</a><a href="https://www.waclinic-ginza.com/menu/wiqo%ef%bc%8d%e3%83%af%e3%82%a4%e3%82%b3">WiQo</a><a href="https://www.waclinic-ginza.com/menu/mdear%ef%bc%8d%e3%82%a8%e3%83%a0%e3%83%87%e3%82%a3%e3%82%a2">MDEAR</a></div>
+</div>
+<div class="cat"><h3>内服・外用薬</h3>
+<div class="chips"><a href="https://www.waclinic-ginza.com/menu/nmn90000">NMN90000</a><a href="https://www.waclinic-ginza.com/menu/%e3%82%b0%e3%83%a9%e3%83%83%e3%82%b7%e3%83%a5%e3%83%93%e3%82%b9%e3%82%bf">グラッシュビスタ</a><a href="https://www.waclinic-ginza.com/menu/%e7%be%8e%e5%ae%b9%e5%86%85%e6%9c%8d">美容内服</a></div>
+</div>
+<div class="cat"><details><summary>ウェルネス<small>ダイエット・薄毛・検査など</small></summary>
+<div class="chips"><a href="https://www.waclinic-ginza.com/menu/%e3%83%a1%e3%83%87%e3%82%a3%e3%82%ab%e3%83%ab%e3%83%80%e3%82%a4%e3%82%a8%e3%83%83%e3%83%88">メディカルダイエット</a><a href="https://www.waclinic-ginza.com/menu/exosome-eye-nasal">エクソソーム点眼・点鼻療法</a><a href="https://www.waclinic-ginza.com/menu/faga">FAGA（女性の薄毛）</a><a href="https://www.waclinic-ginza.com/menu/aga-%e8%96%84%e6%af%9b-2">AGA（男性の薄毛）</a><a href="https://www.waclinic-ginza.com/menu/ed">ED</a><a href="https://www.waclinic-ginza.com/menu/sirt1">SIRT1 アンチエイジング検査</a><a href="https://www.waclinic-ginza.com/menu/epiclock_test">エピクロックテスト</a><a href="https://www.waclinic-ginza.com/menu/%e3%83%86%e3%83%ad%e3%83%a1%e3%82%a2%ef%bc%88%e3%83%92%e3%83%bc%e3%83%ad%e3%83%bc%e9%81%ba%e4%bc%9d%e5%ad%90%ef%bc%89-%e3%82%a2%e3%83%b3%e3%83%81%e3%82%a8%e3%82%a4%e3%82%b8%e3%83%b3%e3%82%b0">テロメア検査</a><a href="https://www.waclinic-ginza.com/menu/intestinal-flora">腸内フローラ</a><a href="https://www.waclinic-ginza.com/menu/beautiful-skin-gene">美肌遺伝子</a><a href="https://www.waclinic-ginza.com/menu/temperament_genes">気質遺伝子</a><a href="https://www.waclinic-ginza.com/menu/cantect">CanTect</a><a href="https://www.waclinic-ginza.com/menu/apoe">APOE</a><a href="https://www.waclinic-ginza.com/menu/%e8%8a%b1%e7%b2%89%e7%97%87%e3%83%9c%e3%83%88%e3%83%83%e3%82%af%e3%82%b9%ef%bc%88%e9%bc%bb%e8%85%94%e5%86%85%e6%b5%b8%e6%bd%a4%e6%b3%95%ef%bc%89">花粉症ボトックス</a></div>
+</details></div>
+</div>
+</div>
+<a class="allmenu" href="https://www.waclinic-ginza.com/menu/">公式サイトで治療メニューを見る ↗</a>
+<p class="note">緑の枠は、初回体験を用意しているメニューです。治療の適応は、医師が診察で判断します。自由診療のため、医療保険は適用されません。</p>
+</div></section>
+
+<section id="price"><div class="wrap">
+<div class="head-c">
+<span class="eyebrow">PRICE &amp; CONDITIONS</span>
+<h2>無料肌相談の内容と条件</h2>
+<p class="sub">相談にかかる費用と、受けられる内容です。</p>
+</div>
+<div class="price-card">
+<div class="price-head"><span>無料肌相談カウンセリング</span><strong>0<small>円</small></strong><em>（税込）<span class="tbd">仮</span></em></div>
+<ul class="incl"><li>医師の診察・カウンセリング</li><li>VISIA肌診断</li><li>治療プランと費用のご説明</li></ul>
+<dl class="conds">
+<div><dt>対象</dt><dd>当院を初めて受診される方・おひとり様1回<span class="tbd">仮</span></dd></div>
+<div><dt>所要時間</dt><dd>約45〜60分（目安）<span class="tbd">仮</span></dd></div>
+<div><dt>当日の施術</dt><dd>必須ではありません。当日の施術を希望される場合は、医師の判断と施術枠の空き状況によります。</dd></div>
+<div><dt>別途費用</dt><dd>施術・お薬・化粧品は別途費用がかかります。受ける場合は、事前に内容と費用をご説明します。</dd></div>
+</dl>
+<a class="cta" href="https://reservation.medical-force.com/c/65f81c55ac4c4336a4c3ce85f7b2817f/reservations/new">無料肌相談を予約する<span aria-hidden="true">→</span></a>
+<p class="cta-note">自由診療・税込表示。<span class="tbd">仮</span> の項目は院と確認中です。</p>
+</div>
+</div></section>
+
+<section class="doctor"><div class="wrap">
+<div class="head-c">
+<span class="eyebrow">MESSAGE FROM WA CLINIC</span>
+<h2>今の肌にも、これからの肌にも。</h2>
+</div>
+<div class="doctor-grid" style="margin-top:20px">
+<img src="../assets/lp/doctor.jpg" alt="WA CLINIC 院長 武藤 文之介">
+<div>
+<p class="dr-role">WA CLINIC 院長</p>
+<p class="dr-name">武藤 文之介<small>Bunnosuke Muto, M.D.</small></p>
+<p class="quote">「美しさは、健康の上にしか成り立たない」</p>
+<p class="msg">今、気になっていること。これまでに受けてきた治療。これから、どのような肌を目指したいか。肌の状態だけでなく、ご希望や生活のペースも伺いながら、治療の進め方を一緒に考えます。</p>
+<dl class="career">
+<div><dt>2007年</dt><dd>防衛医科大学校 医学部 医学科 卒業</dd></div>
+<div><dt>2014年</dt><dd>わかさクリニック美容皮膚科 開設</dd></div>
+<div><dt>2024年</dt><dd>WA CLINIC 院長 就任</dd></div>
+<div><dt>学会</dt><dd>日本皮膚科学会／日本美容皮膚科学会</dd></div>
+</dl>
+<a class="textlink" href="https://www.waclinic-ginza.com/staff/">公式サイトの医師紹介を見る ↗</a>
+</div>
+</div>
+</div></section>
+
+<section class="clinic" style="background:var(--paper)"><div class="wrap">
+<div class="head-c">
+<span class="eyebrow">CLINIC</span>
+<h2>肌のことを話す時間を、<br>心地よい空間で。</h2>
+<p class="sub">光とグリーンに包まれた、落ち着いた院内です。</p>
+</div>
+<div class="gallery">
+<figure><img src="../assets/photo/reception.jpg" alt=""><figcaption>受付</figcaption></figure>
+<figure><img src="../assets/lp/clinic-lounge.jpg" alt=""><figcaption>ラウンジ</figcaption></figure>
+<figure><img src="../assets/photo/consult-room.jpg" alt=""><figcaption>診察室</figcaption></figure>
+<figure><img src="../assets/photo/powder-room.jpg" alt=""><figcaption>パウダールーム</figcaption></figure>
+</div>
+</div></section>
+
+<section class="faq"><div class="wrap">
+<div class="head-c">
+<span class="eyebrow">QUESTIONS &amp; ANSWERS</span>
+<h2>予約の前に、気になることを。</h2>
+</div>
+<details><summary>本当に無料ですか？</summary><p>医師の診察・カウンセリング、VISIA肌診断、治療プランと費用のご説明までが無料です<span class="tbd">仮</span>。施術・お薬・化粧品は別途費用がかかります。受ける場合は、事前に内容と費用をご説明します。</p></details>
+<details><summary>相談だけで帰ってもいいですか？</summary><p>はい。治療をその場で決める必要はありません。ご提案を持ち帰って、ご検討いただけます。</p></details>
+<details><summary>受けたい施術が決まっていなくても予約できますか？</summary><p>ご予約いただけます。施術名が分からなくても、気になっていることをそのままお話しください。</p></details>
+<details><summary>他院で治療中、または治療を受けたことがあっても相談できますか？</summary><p>ご相談いただけます。受けた施術の種類と時期、現在の肌の状態を伺い、今後の進め方をご説明します。</p></details>
+<details><summary>メイクをしたまま来院しても大丈夫ですか？</summary><p>大丈夫です。VISIAで撮影する前に、院内でメイクを落としていただきます。</p></details>
+<details><summary>当日に施術を受けることはできますか？</summary><p>ご希望の場合はご相談ください。医師の判断と施術枠の空き状況によります。</p></details>
+<details><summary>男性も相談できますか？</summary><p>男性もご相談いただけます。</p></details>
+</div></section>
+
+<section class="access" id="access"><div class="wrap">
+<span class="eyebrow">ACCESS / GINZA</span>
+<h2>銀座駅B3出口から徒歩1分。</h2>
+<img src="../assets/photo/lounge-official.jpg" alt="WA CLINICのラウンジ">
+<div>
+<dl>
+<div><dt>所在地</dt><dd>東京都中央区銀座5-6-12 MIYUKIビル 6F</dd></div>
+<div><dt>アクセス</dt><dd>銀座駅 B3出口 徒歩1分（東京メトロ銀座線・丸ノ内線・日比谷線）<br>有楽町駅 中央口 徒歩7分（JR山手線・京浜東北線）</dd></div>
+<div><dt>診療時間</dt><dd>10:00〜18:30／休診日なし</dd></div>
+<div><dt>電話</dt><dd><a href="tel:0359628588">03-5962-8588</a></dd></div>
+</dl>
+<a class="textlink map" href="https://maps.app.goo.gl/uLf7QDYSVUNjZv5SA">Google マップでルートを確認する ↗</a>
+</div>
+</div></section>
+
+<section class="closing"><div class="wrap">
+<span class="eyebrow" style="color:rgba(255,255,255,.8)">LET'S TALK ABOUT YOUR SKIN</span>
+<h2>まずは、<br class="sp">肌の話をするところから。</h2>
+<p class="sub">治療を決めていなくても大丈夫です。</p>
+<div class="btns">
+<a class="cta" href="https://reservation.medical-force.com/c/65f81c55ac4c4336a4c3ce85f7b2817f/reservations/new">無料肌相談を予約する<span aria-hidden="true">→</span></a>
+<a class="cta2" href="https://lin.ee/5nxKFoa">LINEで気軽に聞いてみる</a>
+<a class="tel" href="tel:0359628588">お電話でのご予約・ご相談<b>03-5962-8588</b>10:00〜18:30</a>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<img src="../assets/lp/logo-yoko-black.png" alt="WA CLINIC">
+<nav><a href="https://www.waclinic-ginza.com/">公式サイト</a><a href="https://www.waclinic-ginza.com/privacy-policy/">プライバシーポリシー</a></nav>
+<p>自由診療のため、医療保険は適用されません。治療の効果や経過には個人差があります。<br>© WA CLINIC</p>
+</div></footer>
+
+<div class="sticky" aria-label="予約">
+<a href="https://reservation.medical-force.com/c/65f81c55ac4c4336a4c3ce85f7b2817f/reservations/new">無料肌相談を予約する</a>
+<a href="https://lin.ee/5nxKFoa">LINE</a>
+</div>
+
+<script>
+/* 固定の予約バーは、FVの予約ボタンが画面から外れてから出す（FVのボタンと重ねない） */
+(function(){var bar=document.querySelector('.sticky'),cta=document.querySelector('.js-hero-cta');
+if(!bar||!cta||!('IntersectionObserver' in window))return;
+document.documentElement.classList.add('js-sticky');
+new IntersectionObserver(function(e){bar.classList.toggle('is-shown',!e[0].isIntersecting&&e[0].boundingClientRect.top<0)}).observe(cta);})();
+</script>
+</body></html>
