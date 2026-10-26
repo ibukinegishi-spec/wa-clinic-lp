@@ -1,0 +1,68 @@
+/* A案：公式サイト踏襲。
+   公式サイトの地色 #FAF7F2・文字 #2D2926・明朝見出し・WEB予約ボタンの青 #3B6998 に合わせる。
+   ゴールドは細い罫線だけに使い、割引表示は控えめにする。 */
+:root{
+  --bg-outer:#EFEAE2; --bg:#FAF7F2; --bg-alt:#F3EEE6; --surface:#FFFDF9; --hero-bg:#FAF7F2;
+  --ink:#2D2926; --ink-2:#5E5650; --muted:#8A8178; --line:#E3DACE; --deco:#CDB894;
+  --accent:#3B6998; --accent-ink:#FFFFFF; --accent-text:#85683F; --price-ink:#2D2926;
+  --line-green:#06C755; --line-green-ink:#05994A;
+  --band-bg:#F3EEE6; --offer-bg:#FFFDF9; --offer-border:1px solid #CDB894; --card-border:1px solid #E6DED3;
+  --chip-bg:rgba(250,247,242,.94); --chip-ink:#2D2926; --note-ink:rgba(45,41,38,.62);
+  --header-bg:rgba(250,247,242,.94); --nav-bg:#FAF7F2; --sticky-bg:rgba(250,247,242,.97); --footer-bg:#F3EEE6;
+  --f-head:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+  --f-body:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+  --f-ui:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",sans-serif;
+  --f-num:"Shippori Mincho B1","Hiragino Mincho ProN",serif;
+  --head-w:500; --h1-size:27px; --h2-size:23px; --price-size:46px;
+  --r:2px; --r-btn:2px; --btn-shadow:none; --hero-ratio:6/5; --concern-gap:0px;
+  --ray:rgba(180,154,110,.22); --epi:#F2E5D7; --derm:#EAD7C8; --mel:#86604A; --vessel:#BF6B6B;
+}
+
+/* hero */
+.theme-a .hero-loc{left:14px;bottom:14px}
+.theme-a .concern-eyebrow{display:flex;align-items:center;gap:10px}
+.theme-a .concern-eyebrow::after{content:"";flex:0 0 36px;height:1px;background:var(--deco)}
+.theme-a .treatment-lockup{padding-top:14px;border-top:1px solid var(--line)}
+.theme-a .treatment-lockup strong{font-size:30px;letter-spacing:.06em}
+.lp-pico.theme-a .treatment-lockup strong{font-size:20px}
+.lp-peel.theme-a .treatment-lockup strong{font-size:20px}
+
+.theme-a .concern-limit{color:var(--accent-text);border-bottom:1px solid var(--line)}
+.theme-a .fv-offer-heading{font-family:var(--f-head);font-weight:500;font-size:18px;letter-spacing:.06em;padding-top:14px;padding-bottom:0}
+.theme-a .fv-offer-heading span{font-family:var(--f-ui);color:var(--ink-2)}
+.theme-a .fv-saving{color:var(--ink-2);border:1px solid var(--line);font-size:12px}
+.theme-a .fv-discount{display:grid;place-items:center;width:58px;height:58px;border:1px solid var(--deco);border-radius:50%;font-size:10px;color:var(--accent-text)}
+.theme-a .fv-discount strong{font-family:var(--f-num);font-size:18px;font-weight:600;line-height:1}
+.theme-a .fv-discount strong span{font-size:11px}
+.theme-a .fv-terms{background:var(--bg-alt);border-top:0}
+.theme-a .fv-terms strong{font-weight:700}
+
+/* headings */
+.theme-a .eyebrow{display:flex;align-items:center;gap:12px;font-weight:500}
+.theme-a .eyebrow::after{content:"";flex:0 0 40px;height:1px;background:var(--deco)}
+.theme-a .f-final .eyebrow{justify-content:center}
+.theme-a .f-final .eyebrow::before{content:"";flex:0 0 40px;height:1px;background:var(--deco)}
+
+/* concerns：罫線のリスト */
+.theme-a .f-concern-grid{border-top:1px solid var(--line)}
+.theme-a .f-concern-grid article{padding:16px 2px;border-bottom:1px solid var(--line)}
+.theme-a .f-check{border:1px solid var(--deco);border-radius:50%;color:var(--accent-text);font-size:12px}
+.theme-a .f-concern-grid h3{font-family:var(--f-head);font-weight:500}
+.theme-a .f-callout{background:transparent;border:1px solid var(--deco);text-align:center;font-family:var(--f-head)}
+
+/* price */
+.theme-a .offer-cap{font-family:var(--f-head);font-weight:500;font-size:15px;color:var(--accent-text);border-bottom:1px solid var(--line)}
+.theme-a .off-stamp{width:62px;height:62px;border:1px solid var(--deco);border-radius:50%;font-size:10px;color:var(--accent-text);align-content:center;gap:1px}
+.theme-a .off-stamp b{font-family:var(--f-num);font-size:18px}
+.theme-a .off-stamp b small{font-size:10px}
+.theme-a .saving{background:transparent;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.theme-a .saving b{color:var(--ink)}
+.theme-a .f-case-top span{background:transparent;color:var(--accent-text);border:1px solid var(--deco)}
+.theme-a .f-after-grid span{background:transparent;color:var(--accent-text);border:1px solid var(--deco)}
+
+/* 写真の色味を地色になじませる */
+.theme-a .step-photo img,.theme-a .f-photo-pair img,.theme-a .f-flow-photo img,.theme-a .f-access-layout figure img{filter:saturate(.92)}
+
+/* sticky：割引行は出さず、価格と2ボタンだけ */
+.theme-a .sticky-deal{display:none}
+.theme-a .sticky-btns a{font-size:13.5px}

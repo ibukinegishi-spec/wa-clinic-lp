@@ -1,0 +1,77 @@
+/* B案：ピンク基調（現行案の改良）。
+   色は現行のマゼンタ #D52076 1色に絞り、ゴールドと極太ウェイトをやめる。
+   FVはモデル写真＋機器画像で「何の施術か」を一目で伝える。 */
+:root{
+  --bg-outer:#F7E3ED; --bg:#FFF9FB; --bg-alt:#FDEFF5; --surface:#FFFFFF;
+  --hero-bg:linear-gradient(180deg,#FFF1F7 0%,#FFF9FB 70%);
+  --ink:#4A2738; --ink-2:#76576A; --muted:#9A8190; --line:#F2D6E3; --deco:#F5C3D8;
+  --accent:#D52076; --accent-ink:#FFFFFF; --accent-text:#C81D6E; --price-ink:#D52076;
+  --line-green:#06C755; --line-green-ink:#05994A;
+  --band-bg:#FDE8F1; --offer-bg:#FFFFFF; --offer-border:2px solid #D52076; --card-border:1px solid #F4DCE7;
+  --chip-bg:#D52076; --chip-ink:#FFFFFF; --note-ink:rgba(74,39,56,.6);
+  --header-bg:rgba(255,249,251,.95); --nav-bg:#FFFFFF; --sticky-bg:rgba(255,255,255,.97); --footer-bg:#FDEFF5;
+  --f-head:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",sans-serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",sans-serif;
+  --f-ui:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",sans-serif;
+  --f-num:"Jost","Zen Kaku Gothic New",sans-serif;
+  --head-w:700; --h1-size:30px; --h2-size:24px; --price-size:58px;
+  --r:16px; --r-btn:999px; --btn-shadow:0 6px 16px rgba(213,32,118,.28); --hero-ratio:1/1; --concern-gap:10px;
+  --ray:rgba(213,32,118,.12); --epi:#FBE4ED; --derm:#F6D2E0; --mel:#8A5A48; --vessel:#D5426E;
+}
+body.theme-b{line-height:1.85}
+
+/* hero */
+.theme-b .hero-media::after{content:"";position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(180deg,rgba(255,241,247,0),rgba(255,241,247,.92));pointer-events:none}
+.theme-b .hero-device{display:block;right:-3%;bottom:7%;width:54%;z-index:1;filter:drop-shadow(0 10px 18px rgba(120,40,80,.18))}
+.lp-pico.theme-b .hero-device,.lp-peel.theme-b .hero-device{mix-blend-mode:multiply;filter:none;width:46%;right:3%;border-radius:12px}
+.theme-b .hero-loc{left:12px;top:12px;border-radius:999px;font-weight:700}
+.theme-b .hero-note{z-index:2}
+@media (max-width:899px){.theme-b .hero-body{padding-top:6px;position:relative;z-index:2}}
+.theme-b .concern-eyebrow{font-weight:700}
+.theme-b .hero h1 span{color:var(--accent)}
+.theme-b .treatment-lockup strong{font-size:38px;color:var(--accent)}
+.lp-pico.theme-b .treatment-lockup strong,.lp-peel.theme-b .treatment-lockup strong{font-size:24px}
+
+.theme-b .fv-offer{border-radius:18px;box-shadow:0 10px 30px rgba(213,32,118,.12)}
+.theme-b .concern-limit{background:var(--accent);color:#fff}
+.theme-b .fv-offer-heading{background:var(--band-bg)}
+.theme-b .fv-saving{background:var(--band-bg);color:var(--accent);border-radius:999px}
+.theme-b .fv-discount{display:grid;place-items:center;align-content:center;width:72px;height:72px;border-radius:50%;background:var(--accent);color:#fff;font-size:11px}
+.theme-b .fv-discount strong{font-family:var(--f-num);font-size:26px;line-height:1}
+.theme-b .fv-discount strong span{font-size:13px}
+.lp-pico.theme-b .fv-discount strong,.lp-peel.theme-b .fv-discount strong{font-family:var(--f-ui);font-size:17px}
+.theme-b .fv-terms{background:var(--band-bg);border-top:0}
+.theme-b .fv-terms strong{color:var(--accent)}
+
+/* headings */
+.theme-b .f-heading h2{letter-spacing:.03em}
+
+/* concerns：白いカードを1列に */
+.theme-b .f-concern-grid article{background:var(--surface);border:var(--card-border);border-radius:14px;padding:14px 16px}
+.theme-b .f-check{background:var(--accent);color:#fff;border-radius:50%}
+.theme-b .f-callout{background:var(--surface);border:2px solid var(--deco)}
+
+/* price */
+.theme-b .offer-cap{background:var(--accent);color:#fff}
+.theme-b .off-stamp{width:74px;height:74px;border-radius:50%;background:var(--accent);color:#fff;font-size:11px;align-content:center;gap:1px}
+.theme-b .off-stamp b{font-family:var(--f-num);font-size:24px}
+.lp-pico.theme-b .off-stamp b,.lp-peel.theme-b .off-stamp b{font-family:var(--f-ui);font-size:16px}
+.theme-b .saving{border-radius:999px}
+.theme-b .f-case-top span{border-radius:999px}
+.theme-b .f-after-grid span{border-radius:999px}
+.theme-b .f-case-alert{border-radius:0 12px 12px 0}
+.theme-b .f-flow-photo > div{box-shadow:0 6px 18px rgba(120,40,80,.12)}
+
+/* sticky */
+.theme-b .sticky-deal{background:var(--band-bg);border-radius:999px;padding:3px 12px;width:max-content;max-width:100%;margin:0 auto 6px;color:var(--accent)}
+.theme-b .sticky-deal span{color:var(--ink-2)}
+
+/* ピコの製品画像は背景付きのため、FVには重ねない（施術についての欄で表示） */
+.lp-pico.theme-b .hero-device{display:none}
+
+/* 実写モデルに合わせた機器・製品画像の位置（髪や肩にかかりすぎないように） */
+.lp-peel.theme-b .hero-device{width:40%;right:2%;bottom:5%}
+@media (min-width:900px){
+  .theme-b .hero-device{width:46%;right:2%;bottom:16%}
+  .lp-peel.theme-b .hero-device{width:38%;bottom:16%}
+}
