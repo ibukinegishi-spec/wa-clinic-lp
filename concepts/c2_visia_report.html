@@ -1,0 +1,88 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>案② VISIAで肌を知る｜WA CLINIC（雰囲気案）</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* 案②：検査結果のレポート用紙。白地に薄い方眼、数値まわりは等幅体、差し色は医療機器のようなコバルト */
+:root{--bg:#FFFFFF;--grid:#EEF0F3;--ink:#16181D;--ink2:#555B66;--muted:#8D939C;--line:#DADDE2;--cobalt:#2446A8;--cobalt-soft:#E8EDF9;
+--sans:"Zen Kaku Gothic New","Hiragino Sans",sans-serif;--mono:"DM Mono",ui-monospace,monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.8;-webkit-font-smoothing:antialiased}
+.page{max-width:430px;margin:0 auto;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:20px 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#fff;border-bottom:1px solid var(--line)}
+header img{width:112px}
+header a{font-size:12px;font-weight:700;color:#fff;background:var(--cobalt);text-decoration:none;border-radius:4px;padding:7px 12px}
+.hero{padding:24px 18px 10px}
+.meta{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.06em;margin-bottom:14px}
+h1{font-size:30px;font-weight:900;line-height:1.35;margin:0 0 10px}
+.lead{font-size:13.5px;color:var(--ink2);margin:0 0 18px}
+.report{background:#fff;border:1px solid var(--ink);border-radius:2px}
+.report-head{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;border-bottom:1px solid var(--ink);font-family:var(--mono);font-size:11px;letter-spacing:.08em}
+.report-head b{font-family:var(--sans);font-size:12px;letter-spacing:.02em}
+.scan{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:14px 12px;border-bottom:1px dashed var(--line)}
+.scan svg{width:120px;height:140px}
+.scan p{margin:0;font-size:12px;color:var(--ink2);line-height:1.7}
+.scan p b{display:block;font-size:13.5px;color:var(--ink)}
+.rows{padding:6px 12px 12px}
+.row{display:grid;grid-template-columns:78px 1fr;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--grid)}
+.row:last-child{border-bottom:0}
+.row span{font-size:12.5px;font-weight:700}
+.scale{position:relative;height:8px;background:linear-gradient(90deg,var(--cobalt-soft),#C9D4F1);border-radius:4px}
+.scale i{position:absolute;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--cobalt);border:2px solid #fff;box-shadow:0 0 0 1px var(--cobalt)}
+.scale-legend{display:flex;justify-content:space-between;font-family:var(--mono);font-size:9.5px;color:var(--muted);padding:2px 12px 10px 100px}
+.sample{font-size:10.5px;color:var(--muted);padding:0 12px 12px}
+.cta{display:flex;justify-content:space-between;align-items:center;background:var(--cobalt);color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:15px 18px;border-radius:4px;margin-top:16px}
+.sub{font-size:11.5px;color:var(--ink2);text-align:center;margin:8px 0 0}
+section.map{padding:30px 18px 40px}
+section.map h2{font-size:21px;font-weight:900;margin:0 0 4px;line-height:1.45}
+section.map > p{font-size:13px;color:var(--ink2);margin:0 0 14px}
+.item{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;background:#fff;border:1px solid var(--line);border-left:3px solid var(--cobalt);padding:12px 14px;margin-bottom:8px;text-decoration:none;color:var(--ink)}
+.item small{display:block;font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.06em}
+.item b{font-size:14.5px}
+.item em{font-style:normal;font-size:12px;font-weight:700;color:var(--cobalt)}
+.flow{display:flex;gap:6px;margin-top:16px;font-size:11.5px;font-weight:700}
+.flow span{flex:1;text-align:center;background:var(--cobalt-soft);color:var(--cobalt);padding:8px 4px;border-radius:2px}
+</style></head><body><div class="page">
+<header><img src="../assets/lp/logo-yoko-black.png" alt="WA CLINIC"><a href="#">WEB予約</a></header>
+<section class="hero">
+<div class="meta"><span>SKIN REPORT</span><span>WA CLINIC / GINZA</span></div>
+<h1>あなたの肌、<br>数字で見たこと<br>ありますか？</h1>
+<p class="lead">初回体験には、肌診断機VISIAでの撮影・記録が含まれます。見た目だけでは分かりにくい肌の状態を、医師と一緒に確認します。</p>
+<div class="report" role="img" aria-label="肌診断レポートのイメージ">
+<div class="report-head"><b>肌の状態の見え方（例）</b><span>VISIA</span></div>
+<div class="scan">
+<svg viewBox="0 0 120 140" aria-hidden="true">
+<defs><clipPath id="face"><ellipse cx="60" cy="70" rx="44" ry="58"/></clipPath></defs>
+<ellipse cx="60" cy="70" rx="44" ry="58" fill="#F3F5FA" stroke="var(--ink)" stroke-width="1"/>
+<g clip-path="url(#face)" stroke="#C9D4F1" stroke-width="1">
+<line x1="0" y1="30" x2="120" y2="30"/><line x1="0" y1="50" x2="120" y2="50"/><line x1="0" y1="70" x2="120" y2="70"/><line x1="0" y1="90" x2="120" y2="90"/><line x1="0" y1="110" x2="120" y2="110"/>
+</g>
+<line x1="8" y1="62" x2="112" y2="62" stroke="var(--cobalt)" stroke-width="1.5"/>
+<g fill="var(--cobalt)"><circle cx="38" cy="78" r="2.4"/><circle cx="44" cy="84" r="1.6"/><circle cx="34" cy="86" r="1.8"/><circle cx="80" cy="76" r="2"/><circle cx="86" cy="84" r="1.5"/><circle cx="70" cy="40" r="1.4"/></g>
+<g fill="none" stroke="#D45F5F" stroke-width="1.2" opacity=".7"><ellipse cx="40" cy="90" rx="10" ry="6"/><ellipse cx="82" cy="90" rx="10" ry="6"/></g>
+<path d="M44 58h10M66 58h10M60 66v14M53 98q7 4 14 0" stroke="var(--ink2)" stroke-width="1" fill="none" stroke-linecap="round"/>
+</svg>
+<p><b>撮影して、記録します。</b>肌を撮影し、シミや赤み、毛穴などの状態を画像で確認します。次回以降、経過を比べるときにも使います。</p>
+</div>
+<div class="rows">
+<div class="row"><span>シミ</span><div class="scale"><i style="left:68%"></i></div></div>
+<div class="row"><span>隠れシミ</span><div class="scale"><i style="left:74%"></i></div></div>
+<div class="row"><span>赤み</span><div class="scale"><i style="left:42%"></i></div></div>
+<div class="row"><span>毛穴</span><div class="scale"><i style="left:35%"></i></div></div>
+<div class="row"><span>キメ</span><div class="scale"><i style="left:55%"></i></div></div>
+</div>
+<div class="scale-legend"><span>少ない</span><span>多い</span></div>
+<p class="sample">※表示はイメージです。実際の測定結果ではありません。</p>
+</div>
+<a class="cta" href="#">VISIA込みの初回体験を見る<span aria-hidden="true">→</span></a>
+<p class="sub">初診の方限定・医師の診察つき</p>
+</section>
+<section class="map">
+<h2>結果を見てから、<br>治療を選べます。</h2>
+<p>気になる項目に合わせて、医師が治療を提案します。</p>
+<a class="item" href="#"><div><small>シミ・そばかす・赤み</small><b>BBL光治療（全顔）</b></div><em>初回体験 →</em></a>
+<a class="item" href="#"><div><small>シミ・くすみ・色ムラ</small><b>ピコトーニング（全顔）</b></div><em>初回体験 →</em></a>
+<a class="item" href="#"><div><small>ハリ・ツヤ・キメ</small><b>マッサージピール（全顔）</b></div><em>初回体験 →</em></a>
+<div class="flow"><span>撮影</span><span>診察</span><span>治療を選ぶ</span><span>施術</span></div>
+</section>
+</div></body></html>

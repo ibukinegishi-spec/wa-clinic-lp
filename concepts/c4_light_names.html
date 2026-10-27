@@ -1,0 +1,67 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>案④ 光治療をお探しの方へ｜WA CLINIC（雰囲気案）</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Sora:wght@300;500&display=swap" rel="stylesheet">
+<style>
+/* 案④：光の帯。白地に、プリズムを通したような細い光のグラデーション。文字は墨色、ラベルは丸いチップ */
+:root{--bg:#FFFFFF;--soft:#F6F6F8;--ink:#1C1C22;--ink2:#565661;--muted:#8E8E99;--line:#E4E4EA;--amber:#FFB36B;--coral:#FF7E73;--violet:#B48CF0;--accent:#E0603E;
+--sans:"Zen Kaku Gothic New","Hiragino Sans",sans-serif;--latin:"Sora","Zen Kaku Gothic New",sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.8;-webkit-font-smoothing:antialiased}
+.page{max-width:430px;margin:0 auto;overflow:hidden}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px}
+header img{width:112px}
+header a{font-size:12px;font-weight:700;color:var(--ink);text-decoration:none;border:1.5px solid var(--ink);border-radius:999px;padding:6px 12px}
+.hero{position:relative;padding:22px 18px 26px}
+.beam{position:absolute;left:-40px;right:-40px;top:96px;height:120px;transform:rotate(-8deg);background:linear-gradient(90deg,rgba(255,179,107,0),rgba(255,179,107,.45) 25%,rgba(255,126,115,.45) 55%,rgba(180,140,240,.4) 80%,rgba(180,140,240,0));filter:blur(18px);z-index:0}
+.hero > :not(.beam){position:relative;z-index:1}
+.eyebrow{font-family:var(--latin);font-size:11px;letter-spacing:.2em;color:var(--muted);margin:0 0 12px}
+h1{font-size:32px;font-weight:900;line-height:1.35;margin:0 0 16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.chips span{font-size:13px;font-weight:700;background:rgba(255,255,255,.85);border:1px solid var(--line);border-radius:999px;padding:6px 14px;backdrop-filter:blur(4px)}
+.chips span.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.lead{font-size:14px;color:var(--ink2);margin:0}
+.wa{margin:0 18px;background:var(--soft);border-radius:18px;padding:18px 16px;position:relative}
+.wa .label{font-family:var(--latin);font-size:10.5px;letter-spacing:.18em;color:var(--accent)}
+.wa h2{font-size:20px;font-weight:900;line-height:1.45;margin:4px 0 6px}
+.wa p{font-size:13px;color:var(--ink2);margin:0 0 10px}
+.wa img{display:block;width:78%;margin:4px auto 6px}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:6px 0 14px}
+.feat div{background:#fff;border-radius:10px;padding:10px 6px;text-align:center}
+.feat b{display:block;font-size:12.5px}
+.feat small{display:block;font-size:10.5px;color:var(--muted);line-height:1.5}
+.cta{display:flex;justify-content:space-between;align-items:center;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:15px 18px;border-radius:999px}
+section.q{padding:30px 18px 14px}
+section.q h3{font-size:18px;font-weight:900;margin:0 0 6px;line-height:1.5}
+section.q h3::before{content:"Q.";font-family:var(--latin);font-weight:500;color:var(--accent);margin-right:6px}
+section.q p{font-size:13.5px;color:var(--ink2);margin:0}
+.concerns{padding:12px 18px 10px;display:flex;gap:8px;flex-wrap:wrap}
+.concerns span{font-size:12.5px;font-weight:700;padding:6px 12px;border-radius:8px;background:linear-gradient(90deg,rgba(255,179,107,.18),rgba(255,126,115,.18))}
+.tm{font-size:10.5px;color:var(--muted);padding:14px 18px 40px;margin:0}
+</style></head><body><div class="page">
+<header><img src="../assets/lp/logo-yoko-black.png" alt="WA CLINIC"><a href="#">WEB予約</a></header>
+<section class="hero">
+<div class="beam" aria-hidden="true"></div>
+<p class="eyebrow">LIGHT THERAPY ／ GINZA</p>
+<h1>光治療は、<br>名前がいろいろ。</h1>
+<div class="chips" aria-label="光治療の呼び名の例"><span>IPL</span><span>光フェイシャル</span><span>フォトフェイシャル®</span><span>ルメッカ</span><span class="on">BBL</span></div>
+<p class="lead">どれも、幅広い波長の光を顔全体に当てる治療の仲間です。呼び名は、使う機器によって変わります。</p>
+</section>
+<div class="wa">
+<span class="label">AT WA CLINIC</span>
+<h2>WA CLINICの光治療は、<br>米国サイトン社のBBLです。</h2>
+<img src="../assets/lp/bbl-device.png" alt="BBLのハンドピース（WA CLINIC公式掲載）">
+<div class="feat">
+<div><b>光の届け方</b><small>照射時間や出力を調整</small></div>
+<div><b>フィルター</b><small>悩みに合わせて波長を選択</small></div>
+<div><b>冷却</b><small>照射面を冷やしながら</small></div>
+</div>
+<a class="cta" href="#">BBLの初回体験を見る<span aria-hidden="true">→</span></a>
+</div>
+<section class="q">
+<h3>結局、どの光治療がいいの？</h3>
+<p>機器の名前よりも、いまの肌に合った設定で照射できるかが大切です。WA CLINICでは、医師が肌の状態や治療歴を確認し、照射の設定を調整します。</p>
+</section>
+<div class="concerns" aria-label="光治療で相談の多い悩み"><span>シミ・そばかす</span><span>赤み</span><span>肌全体の印象</span></div>
+<p class="tm">※フォトフェイシャルはルミナス社の登録商標です。他院の機器との優劣を示すものではありません。すべてのシミや肌悩みにBBLが適しているわけではありません。</p>
+</div></body></html>

@@ -1,0 +1,72 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>案⑤ ハリ不足から始める｜WA CLINIC（雰囲気案）</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* 案⑤：大人向けの落ち着いた雑誌。深いグレージュ地に写真を大きく、見出しは太めの明朝。差し色は肌なじみのよいローズベージュ */
+:root{--bg:#24201E;--panel:#2F2A27;--ink:#F3EEE9;--ink2:#C9BFB6;--muted:#9A8F86;--line:#4A423D;--rose:#D9A894;--rose-ink:#2A1F1B;
+--serif:"Zen Old Mincho","Hiragino Mincho ProN",serif;--sans:"Zen Kaku Gothic New","Hiragino Sans",sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.85;-webkit-font-smoothing:antialiased}
+.page{max-width:430px;margin:0 auto}
+header{position:absolute;z-index:3;left:0;right:0;max-width:430px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:14px 16px}
+header img{width:112px;filter:invert(1) brightness(1.6)}
+header a{font-size:12px;font-weight:700;color:var(--rose-ink);background:var(--rose);text-decoration:none;border-radius:999px;padding:6px 13px}
+.hero{position:relative;height:640px;overflow:hidden}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:50% 8%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(36,32,30,.55) 0%,rgba(36,32,30,0) 18%,rgba(36,32,30,0) 36%,rgba(36,32,30,.78) 54%,rgba(36,32,30,.96) 72%,var(--bg) 100%)}
+.hero .copy{position:absolute;z-index:2;left:18px;right:18px;bottom:26px}
+.eyebrow{font-size:11.5px;letter-spacing:.14em;color:var(--rose);margin:0 0 10px}
+h1{font-family:var(--serif);font-weight:900;font-size:36px;line-height:1.32;margin:0 0 12px;letter-spacing:.04em}
+.lead{font-size:14px;color:var(--ink2);margin:0}
+.note-img{position:absolute;z-index:2;right:12px;top:58px;font-size:9.5px;color:rgba(243,238,233,.7)}
+.ladder{padding:30px 18px 6px}
+.ladder h2{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.5;margin:0 0 4px}
+.ladder > p{font-size:13px;color:var(--ink2);margin:0 0 18px}
+.steps{list-style:none;margin:0;padding:0;position:relative}
+.steps::before{content:"";position:absolute;left:19px;top:8px;bottom:30px;width:1px;background:var(--line)}
+.steps li{display:grid;grid-template-columns:40px 1fr;gap:12px;padding:0 0 18px;position:relative}
+.steps .n{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid var(--rose);color:var(--rose);font-family:var(--serif);font-weight:700;font-size:16px;background:var(--bg)}
+.steps li.now .n{background:var(--rose);color:var(--rose-ink)}
+.steps b{display:block;font-family:var(--serif);font-weight:700;font-size:17px;line-height:1.5}
+.steps small{display:block;font-size:12.5px;color:var(--ink2);line-height:1.7}
+.steps .pill{display:inline-block;font-size:10.5px;font-weight:700;color:var(--rose-ink);background:var(--rose);border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:2px}
+.card{margin:6px 18px 0;background:var(--panel);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.card img{width:100%;height:150px;object-fit:cover;opacity:.92}
+.card .in{padding:16px}
+.card .in span{font-size:11px;letter-spacing:.12em;color:var(--rose)}
+.card h3{font-family:var(--serif);font-weight:700;font-size:19px;margin:4px 0 6px}
+.card p{font-size:13px;color:var(--ink2);margin:0 0 14px}
+.cta{display:flex;justify-content:space-between;align-items:center;text-decoration:none;font-weight:700;font-size:15px;padding:15px 18px;border-radius:4px;background:var(--rose);color:var(--rose-ink)}
+.cta.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);margin-top:8px}
+.small{font-size:11px;color:var(--muted);margin:10px 18px 40px;line-height:1.7}
+</style></head><body><div class="page">
+<header><img src="../assets/lp/logo-yoko-black.png" alt="WA CLINIC"><a href="#">WEB予約</a></header>
+<section class="hero">
+<img src="../assets/ai/peel-a-hero.jpg" alt="肌のハリのイメージ（モデル）">
+<span class="note-img">※画像はイメージです</span>
+<div class="copy">
+<p class="eyebrow">ハリ不足が気になり始めた方へ｜銀座</p>
+<h1>ハリ不足、<br>どこから<br>始める？</h1>
+<p class="lead">いきなり大きな治療を選ぶ前に。まずは肌の状態を知り、肌そのものを整えるところから。</p>
+</div>
+</section>
+<section class="ladder">
+<h2>ハリのケアは、<br>3つの段階で考えます。</h2>
+<p>いまの肌に合わせて、どこから始めるかを医師と決めます。</p>
+<ol class="steps">
+<li><span class="n">1</span><div><b>肌を知る</b><small>VISIAで肌の状態を撮影・記録し、医師が診察します。</small></div></li>
+<li class="now"><span class="n">2</span><div><b>肌を整える<span class="pill">最初の一歩</span></b><small>薬剤をなじませるマッサージピールで、ハリ・ツヤのある肌を目指します。</small></div></li>
+<li><span class="n">3</span><div><b>必要なら、次の治療を相談</b><small>たるみやフェイスラインが気になる場合は、ほかの治療も含めて医師と相談します。</small></div></li>
+</ol>
+</section>
+<div class="card">
+<img src="../assets/photo/nurse-room.jpg" alt="WA CLINICの施術室">
+<div class="in"><span>FIRST STEP</span>
+<h3>マッサージピール 初回体験</h3>
+<p>医師の診察とVISIA肌診断がセット。刺激や赤み、皮むけが出る場合もあるため、肌の反応を確認しながら行います。</p>
+<a class="cta" href="#">初回体験の内容と料金を見る<span aria-hidden="true">→</span></a>
+<a class="cta ghost" href="#">まずはLINEで相談する<span aria-hidden="true">→</span></a>
+</div></div>
+<p class="small">施術の適応は医師が診察で判断します。効果や経過には個人差があり、1回での改善を保証するものではありません。</p>
+</div></body></html>

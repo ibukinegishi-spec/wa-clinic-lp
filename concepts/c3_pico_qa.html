@@ -1,0 +1,84 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>案③ 質問に先に答える｜WA CLINIC（雰囲気案）</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* 案③：雑誌の Q&A ページ。白地に墨色、答えの要点だけ蛍光マーカー。数字は細身のセリフ体のイタリック */
+:root{--bg:#FFFFFF;--ink:#141414;--ink2:#4A4A4A;--muted:#8C8C8C;--line:#E6E6E6;--mark:#FFE45C;--accent:#5B4B8A;--soft:#F6F5F1;
+--sans:"Zen Kaku Gothic New","Hiragino Sans",sans-serif;--num:"Instrument Serif",Georgia,serif}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.85;-webkit-font-smoothing:antialiased}
+.page{max-width:430px;margin:0 auto}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid var(--ink)}
+header img{width:112px}
+header a{font-size:12px;font-weight:700;color:var(--ink);text-decoration:none}
+.hero{padding:26px 18px 6px}
+.kicker{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.06em;background:var(--ink);color:#fff;padding:3px 10px;margin:0 0 14px}
+h1{font-size:30px;font-weight:900;line-height:1.35;margin:0 0 10px;letter-spacing:.01em}
+h1 em{font-style:normal;background:linear-gradient(transparent 58%,var(--mark) 58%)}
+.lead{font-size:13.5px;color:var(--ink2);margin:0 0 6px}
+.index{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0 4px}
+.index a{font-size:11.5px;font-weight:700;color:var(--ink);text-decoration:none;border:1px solid var(--ink);border-radius:999px;padding:3px 10px}
+.qa{list-style:none;margin:10px 0 0;padding:0 18px}
+.qa li{border-top:1px solid var(--ink);padding:14px 0 16px}
+.qa li:last-child{border-bottom:1px solid var(--ink)}
+.q{display:grid;grid-template-columns:44px 1fr;align-items:baseline;gap:4px}
+.q i{font-family:var(--num);font-style:italic;font-size:34px;line-height:1;color:var(--accent)}
+.q b{font-size:17px;font-weight:900;line-height:1.45}
+.a{margin:8px 0 0 48px;font-size:13.5px;color:var(--ink2)}
+.a strong{color:var(--ink);font-weight:700;background:linear-gradient(transparent 60%,var(--mark) 60%)}
+.a small{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+.closed .a{display:none}
+.closed .q::after{content:"+";grid-column:2;justify-self:end;margin-top:-26px;font-size:22px;font-weight:400;color:var(--muted)}
+.more{font-size:12px;font-weight:700;color:var(--accent);margin:4px 0 0 48px;display:inline-block}
+.next{margin:22px 18px 0;padding:18px 16px;background:var(--soft)}
+.next p{margin:0 0 12px;font-size:14px;font-weight:700;line-height:1.6}
+.next p span{display:block;font-size:12px;font-weight:500;color:var(--ink2)}
+.btn{display:flex;justify-content:space-between;align-items:center;text-decoration:none;font-weight:700;font-size:15px;padding:15px 18px;margin-top:8px}
+.btn.primary{background:var(--ink);color:#fff}
+.btn.line{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+section.more-qa{padding:34px 18px 40px}
+section.more-qa h2{font-size:20px;font-weight:900;margin:0 0 4px}
+section.more-qa > p{font-size:13px;color:var(--ink2);margin:0 0 14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.grid a{display:block;border:1px solid var(--line);padding:12px;text-decoration:none;color:var(--ink);font-size:13px;font-weight:700;line-height:1.5}
+.grid a i{display:block;font-family:var(--num);font-style:italic;font-weight:400;font-size:20px;color:var(--accent);line-height:1}
+.doc{display:flex;gap:12px;align-items:center;margin-top:18px;border-top:1px solid var(--ink);padding-top:14px}
+.doc img{width:72px;height:90px;object-fit:cover}
+.doc p{margin:0;font-size:12.5px;color:var(--ink2)}
+.doc b{display:block;color:var(--ink);font-size:13.5px}
+</style></head><body><div class="page">
+<header><img src="../assets/lp/logo-yoko-black.png" alt="WA CLINIC"><a href="#">WEB予約 →</a></header>
+<section class="hero">
+<span class="kicker">ピコトーニングを調べている方へ</span>
+<h1>受ける前に、<br><em>よく聞かれる</em><br>5つのこと。</h1>
+<p class="lead">銀座のWA CLINICで、初めての方からいただく質問に先にお答えします。</p>
+<nav class="index"><a href="#">回数</a><a href="#">痛み</a><a href="#">ダウンタイム</a><a href="#">肝斑</a><a href="#">費用</a></nav>
+</section>
+<ol class="qa">
+<li><div class="q"><i>01</i><b>何回くらい通うもの？</b></div>
+<p class="a"><strong>2〜4週間に1回、5〜10回</strong>が目安です。肝斑の治療では4週間以上あけて、医師が判断します。<small>必要な回数・効果には個人差があり、1回での改善を保証するものではありません。</small></p></li>
+<li><div class="q"><i>02</i><b>痛みはある？</b></div>
+<p class="a"><strong>輪ゴムで弾かれるような刺激</strong>を感じる場合があります。痛みが気になる方は事前にご相談ください。</p></li>
+<li class="closed"><div class="q"><i>03</i><b>ダウンタイムは？ 当日メイクは？</b></div><p class="a"></p></li>
+<li class="closed"><div class="q"><i>04</i><b>肝斑があっても受けられる？</b></div><p class="a"></p></li>
+<li class="closed"><div class="q"><i>05</i><b>費用は全部でいくら？</b></div><p class="a"></p></li>
+</ol>
+<a class="more" href="#">回答をすべて開く ↓</a>
+<div class="next">
+<p>疑問が解けたら、まずは1回。<span>初回体験は、医師の診察とVISIA肌診断がセットです。</span></p>
+<a class="btn primary" href="#">初回体験の内容と料金を見る<span aria-hidden="true">→</span></a>
+<a class="btn line" href="#">ほかの質問をLINEで聞く<span aria-hidden="true">→</span></a>
+</div>
+<section class="more-qa">
+<h2>ほかにも、よくある質問</h2>
+<p>気になる質問から読めます。</p>
+<div class="grid">
+<a href="#"><i>06</i>スポット照射との違いは？</a>
+<a href="#"><i>07</i>受けられない人は？</a>
+<a href="#"><i>08</i>使っている薬は？</a>
+<a href="#"><i>09</i>ほかの施術と併用できる？</a>
+</div>
+<div class="doc"><img src="../assets/lp/doctor.jpg" alt="WA CLINIC院長"><p><b>答えきれないことは、診察で医師に。</b>肌の状態や治療歴を確認したうえでお答えします。（写真：WA CLINIC 院長 武藤 文之介）</p></div>
+</section>
+</div></body></html>
